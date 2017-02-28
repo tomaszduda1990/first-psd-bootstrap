@@ -1,0 +1,394 @@
+html {
+  font-size: 62.5%; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: 'Montserrat'; }
+  body .clearfix {
+    clear: both; }
+
+.navigation {
+  height: 10.4rem;
+  width: 100%;
+  padding: 3rem 0; }
+  .navigation .top {
+    height: 100%; }
+    .navigation .top .navbar-brand {
+      padding: 0; }
+    .navigation .top .list {
+      height: 4.1rem;
+      padding: 1rem 0; }
+      .navigation .top .list ul {
+        margin: 0;
+        padding-right: 3.5rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        list-style-type: none; }
+        .navigation .top .list ul a {
+          text-decoration: none;
+          color: #635c73; }
+    .navigation .top .btn-nav {
+      height: 4.1rem; }
+      .navigation .top .btn-nav button {
+        margin: 0;
+        color: white;
+        border: none;
+        background-color: #8d81ac;
+        border-radius: 1.8rem;
+        width: 14.5rem;
+        height: 3.8rem;
+        font-size: 1.6rem;
+        font-weight: 700; }
+
+.overview {
+  background-image: url("imgs/img.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 80rem;
+  position: relative; }
+  .overview .headers {
+    width: 100%;
+    padding-top: 10.8rem;
+    text-align: center; }
+    .overview .headers h1 {
+      color: white;
+      margin: 0;
+      font-size: 8.2rem;
+      font-weight: 700; }
+    .overview .headers .medium {
+      color: #8d81ac;
+      font-size: 3rem;
+      font-family: 'Lato'; }
+    .overview .headers .small {
+      color: #848e97;
+      font-size: 1.6rem; }
+  .overview .btn-download {
+    position: absolute;
+    width: 39rem;
+    height: 6.2rem;
+    color: white;
+    border: none;
+    background-color: #8d81ac;
+    border-radius: 3rem;
+    font-size: 2.1rem;
+    font-weight: 700;
+    bottom: -3.1rem;
+    left: 50%;
+    margin-left: -19.5rem; }
+
+.overview-lower {
+  margin-top: 5rem;
+  margin-bottom: 7rem;
+  text-align: center; }
+  .overview-lower .little-text {
+    color: #848e97;
+    font-size: 1.4rem; }
+  .overview-lower h1 {
+    color: #635c73;
+    font-size: 5.4rem;
+    margin-top: 6.6rem;
+    margin-bottom: 3.9rem;
+    font-weight: 700; }
+  .overview-lower .description {
+    color: #323232;
+    font-family: "Source Sans Pro";
+    font-size: 2.1rem;
+    margin-bottom: 3.6rem; }
+
+.about {
+  background-color: white;
+  margin-bottom: 7.9rem; }
+  .about .container-fluid {
+    padding: 0; }
+    .about .container-fluid .about-background {
+      background-color: #f4f4f4;
+      padding: 8rem 0 0 0; }
+    .about .container-fluid h1 {
+      margin: 0 0 5rem 0;
+      color: #8d81ac;
+      font-size: 4.8rem;
+      font-weight: 700;
+      line-height: 0.7; }
+    .about .container-fluid h3 {
+      margin: 0 0 1.5rem 0;
+      font-size: 1.6rem;
+      color: #323232; }
+    .about .container-fluid p {
+      margin: 0 0 3.6rem 0;
+      color: #848e97;
+      font-size: 1.4rem;
+      line-height: 2.1rem; }
+    .about .container-fluid .carousel-indicators {
+      position: absolute;
+      top: 2rem;
+      left: 6rem; }
+      .about .container-fluid .carousel-indicators li {
+        margin-right: 0.5rem;
+        border-color: black; }
+    .about .container-fluid .item img {
+      height: 58rem;
+      width: 70.5rem;
+      border-radius: 0.5rem; }
+  .about .opinions {
+    background-color: white;
+    text-align: center;
+    padding-top: 8.6rem; }
+    .about .opinions .one-slide .row {
+      margin-bottom: 4.8rem; }
+      .about .opinions .one-slide .row .image-slider {
+        text-align: right; }
+      .about .opinions .one-slide .row .user-name {
+        text-align: left; }
+        .about .opinions .one-slide .row .user-name h3 {
+          margin-bottom: 0.4rem;
+          font-weight: 700;
+          color: #635c73;
+          font-size: 2.4rem; }
+        .about .opinions .one-slide .row .user-name p {
+          color: #8d81ac;
+          font-size: 1.6rem; }
+    .about .opinions .one-slide .comment {
+      position: relative; }
+      .about .opinions .one-slide .comment .plus {
+        position: absolute;
+        top: 0.5rem;
+        right: -8rem; }
+      .about .opinions .one-slide .comment .minus {
+        position: absolute;
+        top: 0.5rem;
+        left: -8rem; }
+      .about .opinions .one-slide .comment p {
+        font-family: "Source Sans Pro";
+        font-size: 2rem;
+        color: #333333; }
+        .about .opinions .one-slide .comment p span {
+          color: #8d81ac; }
+      .about .opinions .one-slide .comment footer p {
+        color: #848e97;
+        font-family: Montserrat;
+        font-size: 16px; }
+    .about .opinions .links {
+      padding-top: 13.3rem; }
+      .about .opinions .links .links-wrapper p {
+        color: #848e97;
+        font-size: 1.4rem;
+        margin-top: 1rem; }
+      .about .opinions .links .links-wrapper a {
+        text-decoration: none; }
+        .about .opinions .links .links-wrapper a div {
+          position: relative;
+          width: 100%;
+          height: 50px;
+          border-radius: 3px 4px 4px 3px;
+          padding: 1rem 0; }
+          .about .opinions .links .links-wrapper a div i {
+            position: absolute;
+            top: 50%;
+            margin-top: -1.05rem;
+            left: 2.4rem;
+            font-size: 2.1rem; }
+          .about .opinions .links .links-wrapper a div p {
+            font-size: 2.1rem;
+            margin: 0 auto; }
+        .about .opinions .links .links-wrapper a .git {
+          background-color: #f3f3f3; }
+          .about .opinions .links .links-wrapper a .git p {
+            color: black; }
+          .about .opinions .links .links-wrapper a .git i {
+            color: black; }
+        .about .opinions .links .links-wrapper a .twitter {
+          background-color: #26a6d1; }
+          .about .opinions .links .links-wrapper a .twitter p {
+            color: white; }
+          .about .opinions .links .links-wrapper a .twitter i {
+            color: white; }
+        .about .opinions .links .links-wrapper a .fb {
+          background-color: #3b5998; }
+          .about .opinions .links .links-wrapper a .fb p {
+            color: white; }
+          .about .opinions .links .links-wrapper a .fb i {
+            color: white; }
+
+.buying-options {
+  background-image: url("imgs/layer-1.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  background-color: #4b3b4e;
+  padding-top: 9.8rem; }
+  .buying-options header {
+    margin-bottom: 8.3rem; }
+    .buying-options header h1 {
+      font-size: 4.8rem;
+      font-weight: 700;
+      color: white; }
+  .buying-options .blocks #high-logo {
+    padding: 0; }
+  .buying-options .blocks .img-wrapper {
+    height: 6.6rem;
+    padding: 1rem 0;
+    margin-bottom: 2.5rem; }
+  .buying-options .blocks .p-wrapper {
+    font-family: "Source Sans Pro";
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 5rem; }
+  .buying-options .underline {
+    margin-top: 9.8rem;
+    display: inline-block;
+    margin-top: 5rem;
+    width: 60%;
+    height: 0.1rem;
+    opacity: 0.2;
+    background-color: #c7c7c7; }
+
+.subscription {
+  background-image: url("imgs/layer-2.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #4b3b4e;
+  padding: 3rem 0 3rem 0;
+  text-align: center;
+  color: white; }
+  .subscription header {
+    margin-bottom: 12rem; }
+    .subscription header h1 {
+      font-size: 4.8rem;
+      font-weight: 700; }
+  .subscription .offer {
+    margin-bottom: 4rem; }
+    .subscription .offer .offer-heading {
+      height: 9.7rem;
+      background-color: rgba(250, 250, 250, 0.06); }
+      .subscription .offer .offer-heading h3 {
+        font-size: 2.4rem;
+        font-weight: 400;
+        line-height: 9.7rem;
+        text-transform: uppercase;
+        margin: 0; }
+    .subscription .offer .offer-wrapper {
+      background-color: rgba(250, 250, 250, 0.11);
+      height: 36rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around; }
+      .subscription .offer .offer-wrapper .offer-price h1 {
+        text-transform: uppercase;
+        font-size: 6rem;
+        font-weight: 700;
+        margin: 2.6rem 0 2.6rem 0; }
+      .subscription .offer .offer-wrapper .offer-price p {
+        opacity: 0.3;
+        font-size: 1.4rem;
+        text-transform: uppercase; }
+      .subscription .offer .offer-wrapper .offer-underline {
+        position: relative;
+        left: 50%;
+        margin-left: -3rem;
+        width: 6rem;
+        height: 0.5rem;
+        background-color: #8d81ac; }
+      .subscription .offer .offer-wrapper .offer-desc {
+        text-transform: capitalize;
+        height: 4.5rem;
+        font-size: 1.6rem;
+        padding: 0 2.4rem;
+        line-height: 2.8rem; }
+      .subscription .offer .offer-wrapper .offer-btn {
+        margin: 3rem 0; }
+        .subscription .offer .offer-wrapper .offer-btn button {
+          width: 16rem;
+          height: 4.2rem;
+          font-size: 1.5rem;
+          text-transform: uppercase;
+          border: none;
+          color: #ffffff;
+          background-color: rgba(255, 255, 255, 0.15);
+          border-radius: 3rem; }
+  .subscription footer {
+    margin: 13rem 0 7.7rem 0;
+    padding: 0 8rem 0 8rem; }
+    .subscription footer p {
+      opacity: 0.8;
+      color: #a291a5;
+      font-family: "Source Sans Pro";
+      font-size: 14px; }
+
+.footer {
+  background-color: #f4f4f4; }
+  .footer .subscribe-footer {
+    padding: 6rem 0;
+    height: 13.4rem; }
+    .footer .subscribe-footer label {
+      font-size: 3rem;
+      font-weight: 700;
+      color: #635c73; }
+    .footer .subscribe-footer input {
+      border-radius: 3rem;
+      border: none; }
+    .footer .subscribe-footer button {
+      border-radius: 3rem;
+      background-color: #8d81ac;
+      text-transform: uppercase;
+      font-size: 1.3rem; }
+  .footer .footer-blocks {
+    padding-top: 8rem;
+    background-color: white; }
+    .footer .footer-blocks h1 {
+      color: #d3d1da;
+      font-size: 2.8rem;
+      font-weight: 700;
+      margin-bottom: 5.8rem; }
+    .footer .footer-blocks p {
+      color: #848e97;
+      font-size: 1.3rem;
+      margin-bottom: 1.4rem; }
+    .footer .footer-blocks a {
+      text-decoration: none; }
+    .footer .footer-blocks h4 {
+      font-size: 1.6rem;
+      margin-bottom: 2.3rem; }
+    .footer .footer-blocks button {
+      background-color: #f4f4f4;
+      color: #8d81ac;
+      border-radius: 0.4rem;
+      border: none;
+      text-transform: capitalize;
+      margin-top: 3.6rem; }
+    .footer .footer-blocks .footer-desc {
+      padding: 0 4rem; }
+      .footer .footer-blocks .footer-desc .blocks-text h4 {
+        color: #8d81ac; }
+      .footer .footer-blocks .footer-desc .left h4 {
+        color: #323232; }
+    .footer .footer-blocks .footer-under {
+      margin-top: 5rem;
+      height: 0.1rem;
+      background-color: rgba(66, 134, 244, 0.2); }
+
+@media screen and (min-width: 769px) and (max-width: 821px) {
+  .navigation .top .btn-nav button {
+    width: 10rem; } }
+@media screen and (max-width: 769px) {
+  .navigation {
+    padding-bottom: 0; }
+    .navigation .top .navbar-brand {
+      height: 4rem; }
+      .navigation .top .navbar-brand img {
+        height: 3.28rem;
+        width: 12.8rem; }
+    .navigation .top .btn-nav {
+      display: none; }
+
+  .about h1 {
+    text-align: center; } }
+
+/*# sourceMappingURL=style.css.map */
