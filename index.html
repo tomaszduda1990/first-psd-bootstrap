@@ -10,20 +10,27 @@
 	<link href="https://fonts.googleapis.com/css?family=Lato|Montserrat|Source+Sans+Pro" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	
+	<script
+ 			 src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
 
+	<script src='main.js'></script>
 	<title>rework</title>
 </head>
 
-<body>
+<body onscroll= "scrollPen()">
 	
 	<!-- <div class="preload">
-		<div class="logo">
-      <img  src="imgs/logo.png" alt="forkio logo">
-    </div>
-		<div class="loader-frame">
-			<div class="loader1" id="loader1"></div>
-			<div class="loader2" id="loader2"></div>
-		</div>
+		
+		<div class="wrapper">
+			<div class="preload-img">
+				<img id="pre-load" src="imgs/slice-11.png" alt="pen">
+	          	<img alt="Brand" src="imgs/shape-1.png">
+			</div>
+			<div class="circle left"></div>
+			<div class="circle middle"></div>
+			<div class="circle right"></div>
+	</div>
 	</div> -->
 
 	
@@ -31,21 +38,25 @@
 
 	   <div class="container">
 			<div class="top row ">
-			  <div class = "col-md-4 col-sm-3 col-xs-2 col-xs-offset-5 col-sm-offset-0">
+			  <div class = "col-md-4 col-sm-3 col-xs-2 col-sm-offset-0">
           		<a class="navbar-brand" href="#">
-		       		 <img alt="Brand" src="imgs/logo.png">
+          			<div>
+          				<img id="move" src="imgs/slice-11.png" alt="pen">
+          				<img alt="Brand" src="imgs/logo.png">          		
+          			</div>
+		       		 
 		      	</a>
 			  </div>
-			  <div class="list col-md-6 col-sm-7 col-xs-10 col-sm-offset-0 col-xs-offset-1">
+			  <div class="list col-md-6 col-sm-7 col-xs-9 col-sm-offset-0 col-xs-offset-1">
 				<ul class="menu-list">
 					<li><a href="#1">Overview</a></li>
-					<li><a href="#">About Fork</a></li>
-					<li><a href="#">Buying Options</a></li>
-					<li><a href="#">Support</a></li>
+					<li><a href="#2">About Fork</a></li>
+					<li><a href="#3">Buying Options</a></li>
+					<li><a href="#4">Support</a></li>
 				</ul>
 			  </div>
       		 <div class='btn-nav col-md-2 col-sm-2'>
-         	   <button type="button" class="btn btn-default navbar-btn">Buy Now</button>
+         	   <button type="button" class="btn btn-default navbar-btn btn-violet">Buy Now</button>
 			 </div>
 			</div>
 		</div>
@@ -72,14 +83,14 @@
 		<div class = 'buttons'>
 			<div class="btn-group col-md-12" role="group" aria-label="...">
 			  <div class= 'col-md-2 col-sm-4 col-xs-4 col-md-offset-3 '>
-			  	<button type="button" class="btn btn-default"><span class="glyphicon glyphicon-star"> Star</span></button>
+			  	<button type="button" class="btn btn-default btn-nothing"><span class="glyphicon glyphicon-star"> Star</span></button>
 			  	
 			  </div>
 			  <div class= 'col-md-2 col-sm-4 col-xs-4'>
-			  	<button type="button" class="btn btn-default"><span class='glyphicon glyphicon-eye-open'> Watch</span> </button><span>
+			  	<button type="button" class="btn btn-default btn-nothing"><span class='glyphicon glyphicon-eye-open'> Watch</span> </button><span>
 			  </div>
 			  <div class= 'col-md-2 col-sm-4 col-xs-4'>
-			  	<button type="button" class="btn btn-default"><span class='glyphicon glyphicon-globe'> Share</span></button>
+			  	<button type="button" class="btn btn-default btn-nothing"><span class='glyphicon glyphicon-globe'> Share</span></button>
 			  </div>
 		
 			</div>
@@ -87,7 +98,7 @@
 		<div class="clearfix"></div>		
 	</section>
 
-	<section class="about">
+	<section class="about" id='2'>
 		<div class="container-fluid">
 			<div class="col-md-6 col-sm-6 col-xs-12 about-background">
 				<div class='col-md-3 col-sm-4 col-xs-4'><img src="imgs/icon1.png" alt="icon1"></div>
@@ -246,7 +257,7 @@
 		</div>
 
 	</section>
-	<section class= 'buying-options'>
+	<section class= 'buying-options' id='3'>
 		<header>
 			<h1 class="heading">People Are Talking About Fork</h1>
 		</header>
@@ -300,100 +311,86 @@
 		<header>
 			<h1>Fork Subscription Pricing</h1>
 		</header>
-		<div class="container">
-			<div class="col-md-3 col-sm-6 col-xs-6 offer">
-				<div class = "offer-heading">
-				  <h3>students</h3>
-				</div>
-				<div class="offer-wrapper">
-					<div class = "offer-price">
+		<div class="pricing">
+			<div class="pricing-inner">
+				<div class="offer ">
+					<div class="tittle-offer">
+						<h3>STUDENTS</h3>
+					</div>
+					<div class="price">
 						<h1>$29</h1>
-						<p>per month</p>
+						<p>PER MONTH</p>
 					</div>
-					<div class = "offer-underline"></div>
-					<div class =' offer-desc'>
-						<p>personal license</p>
+					<div class="under"><div></div></div>
+					<div class="descr">
+						<p>Personal License</p>
 					</div>
-					<div class = 'offer-btn'>
-						<button class='btn .btn-default'>Purchase</button>
-					</div>
+					<div class="btn-buy"><button>PURCHASE</button></div>
 				</div>
-			</div>
-			<div class="col-md-3 col-sm-6 col-xs-6 offer">
-				<div class = "offer-heading">
-				  <h3>professional</h3>
-				</div>
-				<div class="offer-wrapper">
-					<div class = "offer-price">
+				<div class="offer">
+					<div class="tittle-offer">
+						<h3>PROFESSIONAL</h3>
+					</div>
+					<div class="price">
 						<h1>$59</h1>
-						<p>per month</p>
+						<p>PER MONTH</p>
 					</div>
-					<div class = "offer-underline"></div>
-					<div class =' offer-desc'>
+					<div class="under"><div></div></div>
+					<div class="descr">
 						<p>Professional License
-							Email Support</p>
+						Email Support</p>
 					</div>
-					<div class = 'offer-btn'>
-						<button class='btn .btn-default'>Purchase</button>
+					<div class="btn-buy"><button>PURCHASE</button></div>
+				</div>
+				<div class="offer">
+					<div class="tittle-offer">
+						<h3>AGENCY</h3>
 					</div>
-				</div>
-			</div>
-			<div class="col-md-3 col-sm-6 col-xs-6 offer ">
-				<div class = "offer-heading">
-				  <h3>agency</h3>
-				</div>
-				<div class="offer-wrapper">
-					<div class = "offer-price">
+					<div class="price">
 						<h1>$99</h1>
-						<p>per month</p>
+						<p>PER MONTH</p>
 					</div>
-					<div class = "offer-underline"></div>
-					<div class =' offer-desc'>
+					<div class="under"><div></div></div>
+					<div class="descr">
 						<p>1-12 Team Members
-							Phone Support</p>
+						Phone Support</p>
 					</div>
-					<div class = 'offer-btn'>
-						<button class='btn .btn-default'>Purchase</button>
-					</div>
+					<div class="btn-buy"><button>PURCHASE</button></div>
 				</div>
-			</div>
-			<div class="col-md-3 col-sm-6 col-xs-6 offer">
-				<div class = "offer-heading">
-				  <h3>enterprise</h3>
-				</div>
-				<div class="offer-wrapper">
-					<div class = "offer-price">
-						<h1 >$159</h1>
-						<p>per month</p>
+				<div class="offer">
+					<div class="tittle-offer">
+						<h3>ENTERPRISE</h3>
 					</div>
-					<div class = "offer-underline"></div>
-					<div class =' offer-desc'>
+					<div class="price">
+						<h1>$159</h1>
+						<p>PER MONTH</p>
+					</div>
+					<div class="under"><div></div></div>
+					<div class="descr">
 						<p>Unlimited Team Members
 							24/ 7 Phone Support</p>
 					</div>
-					<div class = 'offer-btn'>
-						<button class='btn .btn-default'>Purchase</button>
-					</div>
+					<div class="btn-buy"><button>PURCHASE</button></div>
 				</div>
 			</div>
-		</div>
 		<footer>
 			<p>Duis lobortis arcu sed arcu tincidunt feugiat. Nulla nisi mauris, facilisis vitae aliquet id, imperdiet quis nibh. Donec eget elit eu libero tincidunt consequat nec elementum orci. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
 		</footer>
 	</section>
-	<section class="footer">
+	<section class="footer" id='4'>
 		<div class="container subscribe-footer">
 		  <form>
-		    <div class="form-group row">
-		      <label for="lgFormGroupInput" class="col-xs-7 col-form-label col-form-label-lg">Subscribe To Our Newsletter</label>
-		      <div class="col-xs-3">
+		    <div class="form-group">
+		      <label for="lgFormGroupInput" class="col-xs-7 col-sm-8 col-form-label col-form-label-lg">Subscribe To Our Newsletter</label>
+		      <div class="col-xs-5 col-sm-offset-0 col-sm-2">
 		        <input type="email" class="form-control form-control-lg" id="lgFormGroupInput" placeholder="Email...">
 		      </div>
-		      <div class="col-xs-2">
-		        <button type="submit" class="btn btn-primary">Subscribe</button>
+		      <div class="col-xs-5 col-xs-offset-7 col-sm-offset-0 col-sm-2">
+		        <button type="submit" class="btn btn-primary btn-violet">Subscribe</button>
 		      </div>
 		    </div>
 		   </form>
+
 		</div>
 		<div class="footer-blocks container-fluid">
 			<div class="footer-desc col-md-4">
@@ -408,7 +405,7 @@
 					<p>Nulla purus quam, pulvinar sed ante et, feugiat maximus velit. Donec eu elit mauris. </p>
 					<h4>Improved Stability</h4>
 					<p>Proin id ligula eget massa tincidunt molestie. Morbi urna lectus, molestie vel quam vel, iaculis fermentum nunc. Morbi imperdiet, leo in interdum pretium.</p>
-					 <button type="submit" class="btn btn-primary">Go to the release log</button>
+					 <button type="submit" class="btn btn-primary btn-nothing">Go to the release log</button>
 		     	</div>
 			</div>
 			<div class="footer-desc col-md-4">
@@ -425,7 +422,7 @@
 					</p>
 					<a href="#"><h4>Renamy</h4></a>					
 					<p>Vivamus consectetur suscipit elit, ut lacinia diam elementum et.</p>
-					 <button type="submit" class="btn btn-primary">Go to the marketplace</button>
+					 <button type="submit" class="btn btn-primary btn-nothing">Go to the marketplace</button>
 		     	</div>
 			</div>
 			<div class="footer-desc col-md-4">
@@ -444,19 +441,81 @@
 					<p>February 2, 2015</p>
 					<a href="#"><h4>Phasellus in augue risus. </h4></a>		
 					<p>January 23, 2015</p>
-					 <button type="submit" class="btn btn-primary">go to the blog</button>
+					 <button type="submit" class="btn btn-primary btn-nothing">go to the blog</button>
 		      	</div>
 			</div>
 			<div class="footer-under col-xs-10 col-xs-offset-1"></div>
 		</div>
-		
+		<footer>
+			<div class="container">
+				<div class="col-md-3 col-xs-6">
+					<div><img src="imgs/2-layers.png" alt="logo forkio"></div>
+					<p>Lorem ipsum dolor sit amet, feugiat delicat liberavisse id cum no quo.</p>
+				</div>
+				<div class="col-md-2 col-md-offset-1 col-xs-3 col-xs-offset-3">
+					<h4>Navigation</h4>
+					<ul class="menu-footer">
+						<li><a href="#1">Overview</a></li>
+						<li><a href="#2">About Fork</a></li>
+						<li><a href="#3">Buying Options</a></li>
+						<li><a href="#4">Support</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3 col-xs-12">
+					<h1 >347 567 78 90</h1>
+					<p class = 'p-footer'>AVAILABLE FROM 12PM - 18PM</p>
+					<h4>New York, NY</h4>
+					<p>560 Judah St & 15th Ave, Apt 5
+						San Francisco, CA, 230903</p>
+				</div>
+				<div class="col-md-3 col-xs-12">
+					<h4 id = 'media-margin'>Info</h4>
+					<p>Wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex commodo consequat. Autem vel hendrerit iriure dolor in hendrerit.</p>
+				</div>
+			</div>
+		</footer>
 			
 	
 	</section>
-	<script
- 			 src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-  crossorigin="anonymous"></script>
-
-	<script src='main.js'></script>
+	<div class="container-form disappear">
+			<div class="quit">
+				<button>x</button>
+			</div>
+		  <form>
+		  	<h1>Please sign in</h1>
+		    <div class="form-group row">
+		    	
+		      <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+		      <div class="col-sm-10">
+		        <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+		      </div>
+		    </div>
+		    <div class="form-group row">
+		      <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+		      <div class="col-sm-10">
+		        <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+		      </div>
+		    </div>
+		     <div class="form-group row">
+		      <label for="inputPassword3" class="col-sm-2 col-form-label">Repeat Password</label>
+		      <div class="col-sm-10">
+		        <input type="password" class="form-control" id="inputPassword3" placeholder="Repeat Password">
+		      </div>
+		    </div>
+		   
+		    <div class="form-group row">
+		      
+		      
+		          <label class="form-check-label checkbox">
+		            <input class="form-check-input" type="checkbox"> I agree to the terms and conditions
+		          </label>
+		      
+		    </div>
+		    <div>      
+		        <button type="submit" class="btn btn-primary btn-violet btn-submit">Sign in</button>      
+		    </div>
+		  </form>
+</div>
+	
 </body>
 </html>
