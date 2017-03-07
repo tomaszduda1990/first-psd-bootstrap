@@ -1,8 +1,8 @@
 $(document).ready(function(){
 
-	// $('.preload').delay(3000).fadeOut('slow'); 
-	$
-	$('.navigation a').hover(
+	$('.preload').delay(3000).fadeOut('slow'); 
+	
+	$('.navigation .menu-list a').hover(
 
 		function(){
 			$(this).css({
@@ -96,18 +96,21 @@ $(document).ready(function(){
 	$('.quit').click(function(){
 		$('.container-form').toggleClass('disappear');
 		$('section').toggleClass('blur');
+		$('.quit').toggleClass('disappear');
 
 	})
 			
 	$('.btn-buy').click(function(){
 		$('.container-form').toggleClass('disappear');
 		$('section').toggleClass('blur');
+		$('.quit').toggleClass('disappear');
 		
 
 	})
 	$('.btn-violet').click(function(){
 		$('.container-form').toggleClass('disappear');
 		$('section').toggleClass('blur');
+		$('.quit').toggleClass('disappear');
 		
 
 	})
@@ -148,7 +151,7 @@ $(document).ready(function(){
 })
 
 
-y = 0
+	y = 0
 	function scrollPen() {
 	if($(window).scrollTop() <= 120){
 		 document.getElementById("move").style.transform = "rotate(0deg)"
@@ -174,14 +177,7 @@ y = 0
     }
 });
 
-	// function movePen() {
-	// 	var move = 0;
-	//    for(var i = -7; i>15; i++){
-	//    	if(i>)
-
-	//    }
-
-	// }
+	
 	
 
 
