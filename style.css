@@ -41,7 +41,8 @@ body {
       color: black;
       animation-name: fade-in;
       animation-duration: 2.4s;
-      -webkit-animation-fill-mode: forwards; }
+      -webkit-animation-fill-mode: forwards; 
+      animation-fill-mode: forwards;}
     .preload .wrapper .io {
       opacity: 0;
       color: #8d81ac;
@@ -50,7 +51,8 @@ body {
       animation-name: fade-in;
       animation-duration: 1.5s;
       font-weight: 700;
-      -webkit-animation-fill-mode: forwards; }
+      -webkit-animation-fill-mode: forwards;
+      animation-fill-mode: forwards; }
 
 .navigation {
   position: fixed;
@@ -622,8 +624,10 @@ body {
     opacity: 1; } }
 @keyframes rotation {
   from {
-    transform: rotate(0deg); }
+     -webkit-transform: rotate(0deg); 
+      transform: rotate(0deg);}
   to {
-    transform: rotate(-13deg); } }
+     -webkit-transform: rotate(-13deg); 
+     transform: rotate(-13deg)} }
 
 /*# sourceMappingURL=style.css.map */
